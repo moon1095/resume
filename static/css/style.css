@@ -56,6 +56,10 @@ h1, h2, h3, h4, h5 {
     line-height: 1.5;
 }
 
+.experience-list h3 {
+    font-size: 16px;
+}
+
 .progress-list div {
     width: 100%;
     margin-left: 200px;
@@ -173,9 +177,8 @@ progress::-moz-progress-value {
     margin-top: 20px;
     background-color: #e0eaf0;   
     position: relative;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 40px;
-    text-align: center;
 }
 
 .weixin img{
@@ -284,7 +287,34 @@ ul li{
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
-    
+
+}
+
+.skill .info-list li::before {
+    content: "•";
+    color: #708d9b;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.work h4,
+.project h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #607d8b;
+}
+
+.work h4::before,
+.project h4::before {
+    content: "•";
+    color: #708d9b;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.work .experience-list li,
+.project .experience-list li {
+    list-style-type: circle;
 }
 
 
